@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Rose Cards</title>
+  <link rel="stylesheet" href="rose.css">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+</head>
+<body>
+  <nav class="navbar">
+    <ul>
+      <li><a href="index.html">Home</a></li>
+      <li><a href="about.html">About</a></li>
+      <li><a href="Gallery.html">Gallery</a></li>
+      <li><a href="contact.html">Contact</a></li>
+    </ul>
+  </nav>
+
+  <header class="header">
+    <h1>Elegant Roses</h1>
+    <p>Discover the timeless beauty of roses and find your favorite!</p>
+  </header>
+
+  <main class="content">
+    <section class="card-grid">
+      <!-- 12 Cards -->
+      <div class="card">
+        <img src=" img/red.png " alt=" red rose">
+        <h3>  red rose</h3>
+        <p>Classic red rose symbolizing love and passion.</p>
+        <p class="price">$15.00</p>
+        <label for="order-now" class="order-btn">Order Now</label>
+      </div>
+      <div class="card">
+        <img src="  img/pink.png " alt="pink rose">
+        <h3> pink rose </h3>
+        <p>Delicate pink rose for admiration and grace.</p>
+        <p class="price">$12.00</p>
+        <label for="order-now" class="order-btn">Order Now</label>
+      </div>
+      <div class="card">
+        <img src=" img/white.png " alt="width rose">
+        <h3>width rose </h3>
+        <p>White rose symbolizing purity and elegance.</p>
+        <p class="price">$14.00</p>
+        <label for="order-now" class="order-btn">Order Now</label>
+      </div>
+      <div class="card">
+        <img src="  img/yello.png " alt=" yellow rose ">
+        <h3>yellow rose </h3>
+        <p>Bright yellow rose representing friendship.</p>
+        <p class="price">$10.00</p>
+        <label for="order-now" class="order-btn">Order Now</label>
+      </div>
+      <div class="card">
+        <img src=" img/oranges.png  " alt=" Orange rose ">
+        <h3>Orange rose </h3>
+        <p>Orange rose for enthusiasm and excitement.</p>
+        <p class="price">$13.50</p>
+        <label for="order-now" class="order-btn">Order Now</label>
+      </div>
+      <div class="card">
+        <img src="img/puerple.png " alt=" puerple rose">
+        <h3> puerple rose </h3>
+        <p>Purple rose for enchantment and mystery.</p>
+        <p class="price">$20.00</p>
+        <label for="order-now" class="order-btn">Order Now</label>
+      </div>
+      <div class="card">
+        <img src=" img/rose.png " alt=" Peach rose">
+        <h3> Peach rose </h3>
+        <p>Peach rose symbolizing sincerity and gratitude.</p>
+        <p class="price">$11.00</p>
+        <label for="order-now" class="order-btn">Order Now</label>
+      </div>
+      <div class="card">
+        <img src=" img/rainb.png " alt="">
+        <h3> rainbow rose</h3>
+        <p> rainbow rose bouquet of colorful roses.</p>
+        <p class="price">$25.00</p>
+        <label for="order-now" class="order-btn">Order Now</label>
+      </div>
+      <div class="card">
+        <img src=" img/gren.png " alt="Rose 9">
+        <h3> green rose</h3>
+        <p>Green rose with lush, full blooms.</p>
+        <p class="price">$18.00</p>
+        <label for="order-now" class="order-btn">Order Now</label>
+      </div>
+      <div class="card">
+        <img src=" img/plack.png" alt="Rose 10">
+        <h3>plack rose</h3>
+        <p>Rare black rose for uniqueness and mystery.</p>
+        <p class="price">$30.00</p>
+        <label for="order-now" class="order-btn">Order Now</label>
+      </div>
+      <div class="card">
+        <img src=" img/page.png " alt="Rose 11">
+        <h3> peige rose</h3>
+        <p>peige rose with multiple small blooms.</p>
+        <p class="price">$16.00</p>
+        <label for="order-now" class="order-btn">Order Now</label>
+      </div>
+      <div class="card">
+        <img src="img/pulle.png " alt="Rose 12">
+        <h3>blue</h3>
+        <p>Miniature rose, perfect for small spaces.</p>
+        <p class="price">$8.00</p>
+        <label for="order-now" class="order-btn">Order Now</label>
+      </div>
+    </section>
+  </main>
+
+   <!-- Modal Form for Order -->
+   <input type="checkbox" id="order-now" class="order-now-checkbox">
+   <div class="modal">
+     <div class="modal-content">
+       <label for="order-now" class="close-btn">&times;</label>
+       <h2>Enter Your Details</h2>
+       <form action="buy.html" method="post">
+         <label for="name">Name:</label>
+         <input type="text" id="name" name="name" required>
+  
+         <label for="email">Email:</label>
+         <input type="email" id="email" name="email" required>
+  
+         <label for="password">Password:</label>
+         <input type="password" id="password" name="password" required>
+  
+         <button type="submit" class="next-btn">Next</button>
+       </form>
+     </div>
+   </div>
+  
+
+
+
+
+  <footer class="footer">
+    <p>&copy; 2024 Rose Lovers. All rights reserved.</p>
+  </footer>
+  <button id="back-to-top">↑</button>
+    
+        <script>
+            // زر العودة للأعلى
+            window.onscroll = function() {
+                const button = document.getElementById("back-to-top");
+                if (document.documentElement.scrollTop > 100) {
+                    button.style.display = "block";
+                } else {
+                    button.style.display = "none";
+                }
+            };
+    
+            document.getElementById("back-to-top").onclick = function() {
+                window.scrollTo({ top: 0, behavior: 'smooth' });
+            };
+        </script>
+</body>
+</html>

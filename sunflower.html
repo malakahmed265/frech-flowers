@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sunflower Cards</title>
+  <link rel="stylesheet" href="sunfloeer.css"><link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+
+</head>
+<body>
+  <nav class="navbar">
+    <ul>
+      <li><a href="index.html">Home</a></li>
+      <li><a href="about.html">About</a></li>
+      <li><a href="Gallery.html">Gallery</a></li>
+      <li><a href="contact.html">Contact</a></li>
+    </ul>
+  </nav>
+
+  <header class="header">
+    <h1>Radiant Sunflowers</h1>
+    <p>Brighten your day with the cheerful beauty of sunflowers!</p>
+  </header>
+
+  <main class="content">
+    <section class="card-grid">
+      <!-- 12 Cards -->
+      <div class="card">
+        <img src=" img/40.png " alt="Sunflower 1">
+        <h3>  Golden sunflower </h3>
+        <p>Golden sunflower symbolizing happiness and positivity.</p>
+        <p class="price">$12.00</p>
+        <label for="order-now" class="order-btn">Order Now</label>
+      </div>
+      <div class="card">
+        <img src="img/50.png " alt="Sunflower 2">
+        <h3> Yellow Sunflower</h3>
+        <p>Yellow sunflower bouquet for warmth and joy.</p>
+        <p class="price">$14.00</p>
+        <label for="order-now" class="order-btn">Order Now</label>
+      </div>
+      <div class="card">
+        <img src="img/41.png  " alt="Sunflower 3">
+        <h3> Mini Sunflower</h3>
+        <p>Mini sunflower for subtle charm and brightness.</p>
+        <p class="price">$10.50</p>
+        <label for="order-now" class="order-btn">Order Now</label>
+      </div>
+      <div class="card">
+        <img src="img/44.png " alt="Sunflower 4">
+        <h3>Sunflower 4</h3>
+        <p>Sunflower with vibrant petals for extra energy.</p>
+        <p class="price">$15.00</p>
+        <label for="order-now" class="order-btn">Order Now</label>
+      </div>
+      <div class="card">
+        <img src=" img/49.png " alt="Sunflower 5">
+        <h3>Sunflower 5</h3>
+        <p>Giant sunflower for bold and striking decoration.</p>
+        <p class="price">$18.50</p>
+        <label for="order-now" class="order-btn">Order Now</label>
+      </div>
+      <div class="card">
+        <img src="img/47.png  " alt="Sunflower 6">
+        <h3>Sunflower 6</h3>
+        <p>Sunflower mix bouquet for a joyful variety.</p>
+        <p class="price">$20.00</p>
+        <label for="order-now" class="order-btn">Order Now</label>
+      </div>
+      <div class="card">
+        <img src="img/48.png " alt="Sunflower 7">
+        <h3>Sunflower 7</h3>
+        <p>Wild sunflower for a natural touch to your home.</p>
+        <p class="price">$11.50</p>
+       <label for="order-now" class="order-btn">Order Now</label>
+      </div>
+      <div class="card">
+        <img src="img/42.png " alt="Sunflower 8">
+        <h3>Sunflower 8</h3>
+        <p>Sunflower with dark center for dramatic effect.</p>
+        <p class="price">$16.00</p>
+         <label for="order-now" class="order-btn">Order Now</label>
+      </div>
+      <div class="card">
+        <img src=" img/44.png" alt="Sunflower 9">
+        <h3>Sunflower 9</h3>
+        <p>Sunflower in a vase for perfect gifting.</p>
+        <p class="price">$22.00</p>
+        <label for="order-now" class="order-btn">Order Now</label>
+      </div>
+      <div class="card">
+        <img src="img/46.png " alt="Sunflower 10">
+        <h3>Sunflower 10</h3>
+        <p>Decorative sunflower with unique petal patterns.</p>
+        <p class="price">$19.00</p>
+        <label for="order-now" class="order-btn">Order Now</label>
+      </div>
+      <div class="card">
+        <img src=" img/39.png " alt="Sunflower 11">
+        <h3>Sunflower 11</h3>
+        <p>Hybrid sunflower with rare shades of yellow.</p>
+        <p class="price">$23.50</p>
+        <label for="order-now" class="order-btn">Order Now</label>
+      </div>
+      <div class="card">
+        <img src="img/45.png  " alt="Sunflower 12">
+        <h3>Sunflower 12</h3>
+        <p>Sunflower field-inspired bouquet for extra cheer.</p>
+        <p class="price">$25.00</p>
+        <label for="order-now" class="order-btn">Order Now</label>
+      </div>
+    </section>
+  </main>
+
+
+   <!-- Modal Form for Order -->
+   <input type="checkbox" id="order-now" class="order-now-checkbox">
+   <div class="modal">
+     <div class="modal-content">
+       <label for="order-now" class="close-btn">&times;</label>
+       <h2>Enter Your Details</h2>
+       <form action="buy.html" method="post">
+         <label for="name">Name:</label>
+         <input type="text" id="name" name="name" required>
+  
+         <label for="email">Email:</label>
+         <input type="email" id="email" name="email" required>
+  
+         <label for="password">Password:</label>
+         <input type="password" id="password" name="password" required>
+  
+         <button type="submit" class="next-btn">Next</button>
+       </form>
+     </div>
+   </div>
+  
+
+
+
+
+  <footer class="footer">
+    <p>&copy; 2024 Sunflower Lovers. All rights reserved.</p>
+  </footer>
+  <button id="back-to-top">↑</button>
+    
+  <script>
+      // زر العودة للأعلى
+      window.onscroll = function() {
+          const button = document.getElementById("back-to-top");
+          if (document.documentElement.scrollTop > 100) {
+              button.style.display = "block";
+          } else {
+              button.style.display = "none";
+          }
+      };
+
+      document.getElementById("back-to-top").onclick = function() {
+          window.scrollTo({ top: 0, behavior: 'smooth' });
+      };
+  </script>
+
+</body>
+</html>

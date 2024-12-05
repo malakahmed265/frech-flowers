@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Carnation Cards</title>
+  <link rel="stylesheet" href="carnation.css">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+</head>
+<body>
+  <nav class="navbar">
+    <ul>
+      <li><a href="index.html">Home</a></li>
+      <li><a href="about.html">About</a></li>
+      <li><a href="Gallery.html">Gallery</a></li>
+      <li><a href="contact.html">Contact</a></li>
+    </ul>
+  </nav>
+
+  <header class="header">
+    <h1>Charming Carnations</h1>
+    <p>Explore the delicate and timeless beauty of carnations!</p>
+  </header>
+
+  <main class="content">
+    <section class="card-grid">
+      <!-- 12 Cards -->
+      <div class="card">
+        <img src="img/62.png  " alt="Carnation 1">
+        <h3>Red Carnation</h3>
+        <p>Red carnation symbolizing love and admiration.</p>
+        <p class="price">$10.00</p>
+        <label for="order-now" class="order-btn">Order Now</label>
+      </div>
+      <div class="card">
+        <img src=" img/60.png " alt="Carnation 2">
+        <h3> pink Carnation</h3>
+        <p>Pink carnation for gratitude and affection.</p>
+        <p class="price">$12.50</p>
+        <label for="order-now" class="order-btn">Order Now</label>
+      </div>
+      <div class="card">
+        <img src=" img/52.png " alt="Carnation 3">
+        <h3>White Carnation</h3>
+        <p>White carnation symbolizing purity and luck.</p>
+        <p class="price">$11.00</p>
+        <button class="order-btn">Order Now</button>
+      </div>
+      <div class="card">
+        <img src="img/58.png " alt="Carnation 4">
+        <h3>Yellow Carnation</h3>
+        <p>Yellow carnation for cheerfulness and joy.</p>
+        <p class="price">$13.50</p>
+        <label for="order-now" class="order-btn">Order Now</label>
+      </div>
+      <div class="card">
+        <img src="img/59.png  " alt="Carnation 5">
+        <h3> Purpie Carnation</h3>
+        <p>Purple carnation symbolizing capriciousness and creativity.</p>
+        <p class="price">$15.00</p>
+        <label for="order-now" class="order-btn">Order Now</label>
+      </div>
+      <div class="card">
+        <img src="img/56.png " alt="Carnation 6">
+        <h3> Striped Carnation</h3>
+        <p>Striped carnation for unique and bold statements.</p>
+        <p class="price">$16.50</p>
+        <button class="order-btn">Order Now</button>
+      </div>
+      <div class="card">
+        <img src="img/57.png " alt="Carnation 7">
+        <h3> Green Carnation</h3>
+        <p>Green carnation for freshness and tranquility.</p>
+        <p class="price">$14.00</p>
+        <label for="order-now" class="order-btn">Order Now</label>
+      </div>
+      <div class="card">
+        <img src="img/55.png " alt="Carnation 8">
+        <h3> Peach Carnation</h3>
+        <p>Peach carnation for warmth and admiration.</p>
+        <p class="price">$12.00</p>
+        <label for="order-now" class="order-btn">Order Now</label>
+      </div>
+      <div class="card">
+        <img src=" img/54.png " alt="Carnation 9">
+        <h3> Mixed Carnation</h3>
+        <p>Mixed carnation bouquet for every occasion.</p>
+        <p class="price">$18.00</p>
+        <label for="order-now" class="order-btn">Order Now</label>
+      </div>
+      <div class="card">
+        <img src=" img/51.png" alt="Carnation 10">
+        <h3> Giant Carnation </h3>
+        <p>Giant carnation for bold decorative choices.</p>
+        <p class="price">$20.00</p>
+        <label for="order-now" class="order-btn">Order Now</label>
+      </div>
+      <div class="card">
+        <img src="img/61.png " alt="Carnation 11">
+        <h3> Wild Carnation</h3>
+        <p>Wild carnation for rustic and natural vibes.</p>
+        <p class="price">$14.50</p>
+        <label for="order-now" class="order-btn">Order Now</label>
+      </div>
+      <div class="card">
+        <img src="img/56.png " alt="Carnation 12">
+        <h3> Hybrid Carnation</h3>
+        <p>Hybrid carnation with vibrant and rare colors.</p>
+        <p class="price">$22.50</p>
+        <label for="order-now" class="order-btn">Order Now</label>
+      </div>
+    </section>
+  </main>
+
+ <!-- Modal Form for Order -->
+ <input type="checkbox" id="order-now" class="order-now-checkbox">
+ <div class="modal">
+   <div class="modal-content">
+     <label for="order-now" class="close-btn">&times;</label>
+     <h2>Enter Your Details</h2>
+     <form action="buy.html" method="post">
+       <label for="name">Name:</label>
+       <input type="text" id="name" name="name" required>
+
+       <label for="email">Email:</label>
+       <input type="email" id="email" name="email" required>
+
+       <label for="password">Password:</label>
+       <input type="password" id="password" name="password" required>
+
+       <button type="submit" class="next-btn">Next</button>
+     </form>
+   </div>
+ </div>
+
+
+
+
+
+
+
+  <footer class="footer">
+    <p>&copy; 2024 Carnation Lovers. All rights reserved.</p>
+  </footer>
+
+  <button id="back-to-top">↑</button>
+    
+  <script>
+      // زر العودة للأعلى
+      window.onscroll = function() {
+          const button = document.getElementById("back-to-top");
+          if (document.documentElement.scrollTop > 100) {
+              button.style.display = "block";
+          } else {
+              button.style.display = "none";
+          }
+      };
+
+      document.getElementById("back-to-top").onclick = function() {
+          window.scrollTo({ top: 0, behavior: 'smooth' });
+      };
+  </script>
+</body>
+</html>

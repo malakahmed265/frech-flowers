@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tulip Cards</title>
+  <link rel="stylesheet" href="tulip.css"><link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+
+</head>
+<body>
+  <nav class="navbar">
+    <ul>
+      <li><a href="index.html">Home</a></li>
+      <li><a href="about.html">About</a></li>
+      <li><a href="Gallery.html">Gallery</a></li>
+      <li><a href="contact.html">Contact</a></li>
+    </ul>
+  </nav>
+
+  <header class="header">
+    <h1>Graceful Tulips</h1>
+    <p>Explore the charm of tulips and choose your favorite!</p>
+  </header>
+
+  <main class="content">
+    <section class="card-grid">
+      <!-- 12 Cards -->
+      <div class="card">
+        <img src="img/red tulip.png " alt="Tulip 1">
+        <h3>red tulip</h3>
+        <p>Red tulip symbolizing love and passion.</p>
+        <p class="price">$12.00</p>
+        <label for="order-now" class="order-btn">Order Now</label>
+      </div>
+      <div class="card">
+        <img src="img/yello.png " alt="Tulip 2">
+        <h3> yellow tulip </h3>
+        <p>Yellow tulip for cheerfulness and joy.</p>
+        <p class="price">$10.00</p>
+        <label for="order-now" class="order-btn">Order Now</label>
+      </div>
+      <div class="card">
+        <img src="img/tulip.png  " alt="Tulip 3">
+        <h3> pink tulip</h3>
+        <p>Pink tulip for affection and care.</p>
+        <p class="price">$11.50</p>
+        <label for="order-now" class="order-btn">Order Now</label>
+      </div>
+      <div class="card">
+        <img src="img/white 1.png  " alt="Tulip 4">
+        <h3> white tulip</h3>
+        <p>White tulip symbolizing purity and peace.</p>
+        <p class="price">$14.00</p>
+        <label for="order-now" class="order-btn">Order Now</label>
+      </div>
+      <div class="card">
+        <img src=" img/yello 1.png" alt="Tulip 5">
+        <h3> Orange tulip</h3>
+        <p>Orange tulip for energy and warmth.</p>
+        <p class="price">$13.00</p>
+        <label for="order-now" class="order-btn">Order Now</label>
+      </div>
+      <div class="card">
+        <img src="img/perpul.png " alt="Tulip 6">
+        <h3> Purple tulip</h3>
+        <p>Purple tulip symbolizing royalty and admiration.</p>
+        <p class="price">$15.00</p>
+        <label for="order-now" class="order-btn">Order Now</label>
+      </div>
+      <div class="card">
+        <img src="img/mixed.png " alt="Tulip 7">
+        <h3> mixe tulip</h3>
+        <p>Mixed tulip bouquet for all occasions.</p>
+        <p class="price">$20.00</p>
+        <label for="order-now" class="order-btn">Order Now</label>
+      </div>
+      <div class="card">
+        <img src="img/color.png " alt="Tulip 8">
+        <h3> mixed tulip</h3>
+        <p>Bi-color tulip with unique patterns.</p>
+        <p class="price">$18.00</p>
+        <label for="order-now" class="order-btn">Order Now</label>
+      </div>
+      <div class="card">
+        <img src="img/red or yello.png " alt="Tulip 9">
+        <h3> rad and yellow tulip</h3>
+        <p>Bright red and yellow tulips for vibrancy.</p>
+        <p class="price">$17.00</p>
+        <label for="order-now" class="order-btn">Order Now</label>
+      </div>
+      <div class="card">
+        <img src="img/plack1.png " alt="Tulip 10">
+        <h3> plack tulip</h3>
+        <p>plack tulip with elegant petals.</p>
+        <p class="price">$22.00</p>
+        <label for="order-now" class="order-btn">Order Now</label>
+      </div>
+      <div class="card">
+        <img src=" img/pull.png" alt="Tulip 11">
+        <h3> blue tulip</h3>
+        <p>blue tulip for compact beauty.</p>
+        <p class="price">$9.00</p>
+        <label for="order-now" class="order-btn">Order Now</label>
+      </div>
+      <div class="card">
+        <img src="img/garden.png " alt="Tulip 12">
+        <h3> Garden tulip</h3>
+        <p>Garden tulip for natural charm.</p>
+        <p class="price">$19.00</p>
+        <label for="order-now" class="order-btn">Order Now</label>
+      </div>
+    </section>
+  </main>
+
+
+   <!-- Modal Form for Order -->
+   <input type="checkbox" id="order-now" class="order-now-checkbox">
+   <div class="modal">
+     <div class="modal-content">
+       <label for="order-now" class="close-btn">&times;</label>
+       <h2>Enter Your Details</h2>
+       <form action="buy.html" method="post">
+         <label for="name">Name:</label>
+         <input type="text" id="name" name="name" required>
+  
+         <label for="email">Email:</label>
+         <input type="email" id="email" name="email" required>
+  
+         <label for="password">Password:</label>
+         <input type="password" id="password" name="password" required>
+  
+         <button type="submit" class="next-btn">Next</button>
+       </form>
+     </div>
+   </div>
+  
+
+
+
+
+
+  <footer class="footer">
+    <p>&copy; 2024 Tulip Lovers. All rights reserved.</p>
+  </footer>
+  <button id="back-to-top">↑</button>
+    
+  <script>
+      // زر العودة للأعلى
+      window.onscroll = function() {
+          const button = document.getElementById("back-to-top");
+          if (document.documentElement.scrollTop > 100) {
+              button.style.display = "block";
+          } else {
+              button.style.display = "none";
+          }
+      };
+
+      document.getElementById("back-to-top").onclick = function() {
+          window.scrollTo({ top: 0, behavior: 'smooth' });
+      };
+  </script>
+
+
+
+</body>
+</html>

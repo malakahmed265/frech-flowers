@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Lily Cards</title>
+  <link rel="stylesheet" href="Lily.css">
+
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+
+  </head>
+<body>
+  <nav class="navbar">
+    <ul>
+      <li><a href="index.html">Home</a></li>
+      <li><a href="about.html">About</a></li>
+      <li><a href="Gallery.html">Gallery</a></li>
+      <li><a href="contact.html">Contact</a></li>
+    </ul>
+  </nav>
+
+  <header class="header">
+    <h1>Elegant Lilies</h1>
+    <p>Experience the grace of lilies and select your favorite!</p>
+  </header>
+
+  <main class="content">
+    <section class="card-grid">
+      <!-- 12 Cards -->
+      <div class="card">
+        <img src="img/lily.png  " alt="Lily 1">
+        <h3> White lily</h3>
+        <p>White lily symbolizing purity and peace.</p>
+        <p class="price">$16.00</p>
+        <label for="order-now" class="order-btn">Order Now</label>
+      </div>
+      <div class="card">
+        <img src=" img/11.png " alt="Lily 2">
+        <h3> pink lily</h3>
+        <p>Pink lily for admiration and elegance.</p>
+        <p class="price">$14.00</p>
+        <label for="order-now" class="order-btn">Order Now</label>
+      </div>
+      <div class="card">
+        <img src="img/13.png   " alt="Lily 3">
+        <h3> Yellow Lily</h3>
+        <p>Yellow lily for joy and gratitude.</p>
+        <p class="price">$12.50</p>
+        <label for="order-now" class="order-btn">Order Now</label>
+      </div>
+      <div class="card">
+        <img src=" img/14.png " alt="Lily 4">
+        <h3> Orange Lily </h3>
+        <p>Orange lily symbolizing passion and confidence.</p>
+        <p class="price">$15.00</p>
+        <label for="order-now" class="order-btn">Order Now</label>
+      </div>
+      <div class="card">
+        <img src="  img/1.png " alt="Lily 5">
+        <h3> Calla Lily </h3>
+        <p>Calla lily for elegance and sophistication.</p>
+        <p class="price">$18.00</p>
+        <label for="order-now" class="order-btn">Order Now</label>
+      </div>
+      <div class="card">
+        <img src=" img/2.png  " alt="Lily 6">
+        <h3> Stargazer Lily </h3>
+        <p>Stargazer lily with vibrant colors and fragrance.</p>
+        <p class="price">$20.00</p>
+        
+      </div>
+      <div class="card">
+        <img src=" img/10.png  " alt="Lily 7">
+        <h3>Asiatic Lily </h3>
+        <p>Asiatic lily for bold and vivid expressions.</p>
+        <p class="price">$13.00</p>
+        <label for="order-now" class="order-btn">Order Now</label>
+      </div>
+      <div class="card">
+        <img src=" img/9.png " alt="Lily 8">
+        <h3>Lily 8</h3>
+        <p>Trumpet lily with long-lasting blooms.</p>
+        <p class="price">$17.00</p>
+        <label for="order-now" class="order-btn">Order Now</label>
+      </div>
+      <div class="card">
+        <img src="img/12.png  " alt="Lily 9">
+        <h3> Peruvian Lily</h3>
+        <p>Peruvian lily for friendship and devotion.</p>
+        <p class="price">$11.00</p>
+        <label for="order-now" class="order-btn">Order Now</label>
+      </div>
+      <div class="card">
+        <img src=" img/8.png " alt="Lily 10">
+        <h3>Tiger Lily</h3>
+        <p>Tiger lily for confidence and pride.</p>
+        <p class="price">$19.00</p>
+        <label for="order-now" class="order-btn">Order Now</label>
+      </div>
+      <div class="card">
+        <img src=" img/4.png  " alt="Lily 11">
+        <h3>mini Lily</h3>
+        <p>Mini lily for delicate beauty.</p>
+        <p class="price">$9.50</p>
+        <label for="order-now" class="order-btn">Order Now</label>
+      </div>
+      <div class="card">
+        <img src=" img/6.png " alt="Lily 12">
+        <h3>Hybrid Lily</h3>
+        <p>Hybrid lily for unique and bold looks.</p>
+        <p class="price">$21.00</p>
+        <label for="order-now" class="order-btn">Order Now</label>
+      </div>
+    </section>
+  </main>
+
+
+   <!-- Modal Form for Order -->
+   <input type="checkbox" id="order-now" class="order-now-checkbox">
+   <div class="modal">
+     <div class="modal-content">
+       <label for="order-now" class="close-btn">&times;</label>
+       <h2>Enter Your Details</h2>
+       <form action="buy.html" method="post">
+         <label for="name">Name:</label>
+         <input type="text" id="name" name="name" required>
+  
+         <label for="email">Email:</label>
+         <input type="email" id="email" name="email" required>
+  
+         <label for="password">Password:</label>
+         <input type="password" id="password" name="password" required>
+  
+         <button type="submit" class="next-btn">Next</button>
+       </form>
+     </div>
+   </div>
+  
+
+
+  <footer class="footer">
+    <p>&copy; 2024 Lily Lovers. All rights reserved.</p>
+  </footer>
+  <button id="back-to-top">↑</button>
+    
+  <script>
+      // زر العودة للأعلى
+      window.onscroll = function() {
+          const button = document.getElementById("back-to-top");
+          if (document.documentElement.scrollTop > 100) {
+              button.style.display = "block";
+          } else {
+              button.style.display = "none";
+          }
+      };
+
+      document.getElementById("back-to-top").onclick = function() {
+          window.scrollTo({ top: 0, behavior: 'smooth' });
+      };
+  </script>
+
+</body>
+</html>

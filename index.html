@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+    <meta http-equiv="x-ua-compatible" content="ie=edge" />
+    <title> Freach flowers </title>
+    <!-- MDB icon -->
+    <link rel="icon" href="img/mdb-favicon.ico" type="image/x-icon" />
+    <!-- Font Awesome -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+    />
+    <!-- Google Fonts Roboto -->
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap"
+    />
+    <!-- MDB -->
+    <link rel="stylesheet" href="css/mdb.min.css" />
+    <link rel="stylesheet" href="css/styles.css ">
+  </head>
+  <body>
+    <!-- Start your project here-->
+   
+
+
+        <!-- الشريط الجانبي -->
+        <div class="sidebar">
+            <a href="rose.html">Rose</a>
+            <a href="tulip.html">Tulip</a>
+            <a href="lily.html">Lily</a>
+            <a href="daisy.html">Daisy</a>
+            <a href="orchid.html">Orchid</a>
+            <a href="sunflower.html">Sunflower</a>
+            <a href="carnation.html">Carnation</a>
+            <a href="lavender.html">Lavender</a>
+            <a href="peony.html">Peony</a>
+            <a href="jasmine.html">Jasmine</a>
+        </div>
+    
+        <!-- شريط التنقل -->
+        <nav class="navbar navbar-expand-lg">
+            <div class="container-fluid">
+                <a class="navbar-brand text-white" href="#">Fresh Flower</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarScroll" aria-controls="navbarScroll" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarScroll">
+                    <ul class="navbar-nav me-auto my-2 my-lg-0 navbar-nav-scroll">
+                        <li class="nav-item"><a class=" nav-link" href="index.html">Home</a></li>
+                        <li class="nav-item"><a class=" nav-link" href="about.html"> About</a></li>
+                        <li class="nav-item"><a class=" nav-link" href="contact.html"> Contact</a></li>
+                        <li class="nav-item"><a class="nav-link" href="Gallery.html">Gallery </a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    
+        <!-- خلفية الصورة -->
+        <div class="img">
+            
+            
+            <h2>You have an appointment with beauty and elegance</h2>
+            <p>Let our flowers tell your story with their vibrant colors.</p>
+            
+
+        </div>
+    
+
+
+
+        <!-- الفوتر -->
+        <footer>
+            <p>&copy; 2024 Fresh Flower | Made with ❤ for flower lovers</p>
+            <div class="social-icons">
+                <a href="https://instagram.com" target="_blank"><i class="fab fa-instagram"></i></a>
+                <a href="https://facebook.com" target="_blank"><i class="fab fa-facebook"></i></a>
+                <a href="https://twitter.com" target="_blank"><i class="fab fa-twitter"></i></a>
+                <a href="https://pinterest.com" target="_blank"><i class="fab fa-pinterest"></i></a>
+            </div>
+        </footer>
+    
+
+
+        <button id="back-to-top">↑</button>
+    
+        <script>
+            // زر العودة للأعلى
+            window.onscroll = function() {
+                const button = document.getElementById("back-to-top");
+                if (document.documentElement.scrollTop > 100) {
+                    button.style.display = "block";
+                } else {
+                    button.style.display = "none";
+                }
+            };
+    
+            document.getElementById("back-to-top").onclick = function() {
+                window.scrollTo({ top: 0, behavior: 'smooth' });
+            };
+        </script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    
+    <!-- end your project here-->
+
+
+  </body>
+</html>
